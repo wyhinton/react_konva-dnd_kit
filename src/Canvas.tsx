@@ -159,6 +159,7 @@ const Widget = ({
     onDragMove,
     draggable,
     id,
+    cornerRadius,
   } = rect;
   return (
     <Rect
@@ -172,6 +173,7 @@ const Widget = ({
       onClick={(e) => {
         console.log(e);
       }}
+      cornerRadius={cornerRadius}
       onMouseDown={(e) => {
         onMouseDown(e);
         console.log(e);
